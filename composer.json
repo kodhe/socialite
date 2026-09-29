@@ -1,0 +1,25 @@
+{
+  "name": "kodhe/socialite",
+  "description": "Native OAuth social login component (Google, GitHub, Facebook, GitLab, LinkedIn, Twitter) for the Kodhe framework. Self-contained: no laravel/socialite dependency.",
+  "type": "library",
+  "version": "1.0.0",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "ext-json": "*"
+  },
+  "suggest": {
+    "ext-curl": "Used by the default HTTP client (falls back to PHP streams when missing)",
+    "ext-openssl": "May be required by some HTTPS transports"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kodhe\\Framework\\Socialite\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
